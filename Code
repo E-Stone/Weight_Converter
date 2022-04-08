@@ -1,0 +1,9 @@
+weight = input("Weight: ")
+metric = input("(K)g or (L)bs? ")
+
+if metric.upper() == "L":
+    print("You Weigh " + str(int(weight) * 0.453592) + "kg")
+elif metric.upper() == "K":
+    print("You Weigh " + str(int(weight) * 2.20462) + "lb" )
+else:
+    print("Unrecognized Weight. Please use K for Kg or L for Lbs")
